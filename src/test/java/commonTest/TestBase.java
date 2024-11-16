@@ -28,11 +28,11 @@ public class TestBase {
 
     }
 
-    /*@AfterTest
+    @AfterTest
     public void teardown(){
 
         quitBrowser(driver);
-    }*/
+    }
 
 
 }
