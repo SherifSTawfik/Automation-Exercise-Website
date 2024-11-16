@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="full order">
+    <test name="Create full order" preserve-order="false">
+        <classes>
+
+            <class name="testcases.TC01_HomePage">
+                <methods>
+                    <include name="clickOnProducts"/>
+                </methods>
+            </class>
+            <class name="testcases.TC09_Products">
+                <methods>
+                    <include name="searchForProduct"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <!--  Test Case 1 [Register new account] -->
+    <test name="Register New User">
+        <classes>
+            <class name="testcases.TC01_HomePage">
+                <methods>
+                    <include name="clickSignupLoginBtn"/>
+                </methods>
+            </class>
+            <class name="testcases.TC02_initial_SignUp">
+                <methods>
+                    <include name="enterNewSignUpCred"/>
+                </methods>
+            </class>
+            <class name="testcases.TC03_Registration">
+                <methods>
+                    <include name="enterRegisterCred"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--  Test Case 2 [Login with registered username]  -->
+    <test name="Login with registered email and password">
+        <classes>
+            <class name="testcases.TC01_HomePage">
+                <methods>
+                    <include name="clickSignupLoginBtn"/>
+                </methods>
+            </class>
+            <class name="testcases.TC02_LoginValidCred">
+                <methods>
+                    <include name="enterValidLoginCredentials"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--  Test Case 3 [login , select product, payment and finish test cycle]  -->
+    <test name="Create full order" preserve-order="false">
+        <classes>
+            <class name="testcases.TC01_HomePage">
+                <methods>
+                    <include name="clickSignupLoginBtn"/>
+                </methods>
+            </class>
+            <class name="testcases.TC02_LoginValidCred">
+                <methods>
+                    <include name="enterValidLoginCredentials"/>
+                </methods>
+            </class>
+            <class name="testcases.TC01_HomePage">
+                <methods>
+                    <include name="clickOnProducts"/>
+                </methods>
+            </class>
+            <class name="testcases.TC09_Products">
+                <methods>
+                    <include name="hoverFirstProduct"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--  Test Case 25 [Verify Scroll Up using 'Arrow' button and Scroll Down functionality]  -->
+    <test name="Create full order" preserve-order="false">
+        <classes>
+            <class name="testcases.TC01_HomePage">
+                <methods>
+                    <include name="verifySubTxt"/>
+                    <include name="clickScrollUp"/>
+                    <include name="verifyPageScrolledUp"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+
+
+
+
+
+</suite>

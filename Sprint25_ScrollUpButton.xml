@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Scroll up">
+    <test name="Create full order" preserve-order="false">
+        <classes>
+            <class name="testcases.TC01_HomePage">
+                <methods>
+                    <include name="scrollToSubscriptionTxt"/>
+                    <include name="clickScrollUp"/>
+                    <include name="verifyPageScrolledUp"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

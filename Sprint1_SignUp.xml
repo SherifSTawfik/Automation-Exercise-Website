@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sprint1_SignUp">
+    <test name="Validate SignUp">
+        <classes>
+            <class name="testcases.TC01_HomePage">
+                <methods>
+                    <include name="clickSignupLoginBtn"/>
+                </methods>
+            </class>
+            <class name="testcases.TC02_initial_SignUp">
+                <methods>
+                    <include name="enterNewSignUpCred"/>
+                </methods>
+            </class>
+            <class name="testcases.TC03_Registration">
+                <methods>
+                    <include name="enterRegisterCred"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
